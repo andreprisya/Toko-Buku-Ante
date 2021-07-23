@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="700" pageHeight="842" columnWidth="660" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="be765c5f-8bd2-4e96-89de-f95bb2b7e95f">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="idcustomersewa" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT * FROM cust_sewa WHERE id_customer = $P{idcustomersewa}]]>
+	</queryString>
+	<field name="id_customer" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_customer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="notelp_customer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_pinjam" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="id_buku" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="lama_pinjam" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_customer" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga_pinjam" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band/>
+	</background>
+	<title>
+		<band height="72">
+			<frame>
+				<reportElement uuid="55bbd90a-4d2f-4ef7-bf50-f54262c916ee" mode="Opaque" x="-20" y="-19" width="700" height="91" backcolor="#006699"/>
+				<staticText>
+					<reportElement uuid="13958b45-6d81-4034-ab9b-d0aec409007c" x="120" y="20" width="510" height="43" forecolor="#FFFFFF"/>
+					<textElement>
+						<font size="34" isBold="true"/>
+					</textElement>
+					<text><![CDATA[NOTA PEMINJAMAN BUKU]]></text>
+				</staticText>
+				<staticText>
+					<reportElement uuid="2e86e00f-26c2-408c-a10a-bcdb4baf44a6" x="296" y="63" width="138" height="20" forecolor="#FFFFFF"/>
+					<textElement textAlignment="Right">
+						<font size="14" isBold="false"/>
+					</textElement>
+					<text><![CDATA[TOKO BUKU ANTE]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="13"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="312">
+			<line>
+				<reportElement uuid="1da7fe7f-98f9-4892-904f-856ab4188af6" x="-20" y="20" width="700" height="1" forecolor="#666666"/>
+			</line>
+			<staticText>
+				<reportElement uuid="530d7776-f0ac-43ea-8090-23dbe7ca296b" mode="Opaque" x="0" y="0" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id_customer	:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="19828e9b-9d6b-4b73-8570-b34d328b298c" mode="Opaque" x="0" y="54" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[nama customer :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3ce0639-55dd-4691-875e-09a4a8835226" mode="Opaque" x="0" y="94" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[notelp customer :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="7e8637ee-9b14-43eb-a432-b67906eed895" mode="Opaque" x="345" y="1" width="102" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[tanggal Pinjam]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="1f6ffd1a-6ea3-4260-bc84-d4977fa5708b" mode="Opaque" x="58" y="176" width="80" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[id buku :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="818a4b30-4f61-4b91-9bdd-77871a77bafd" mode="Opaque" x="26" y="215" width="112" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[lama pinjam :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="9ef3fde6-9bf4-4d90-b528-613c6b76f781" mode="Opaque" x="0" y="135" width="138" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[alamat customer :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="08a4ea24-2ad9-4a92-b8b8-9946bd2ddf67" mode="Opaque" x="340" y="275" width="117" height="20" forecolor="#006699" backcolor="#E6E6E6"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[harga pinjam :]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1d90918a-c1b7-4fe1-bb24-5065e519165d" x="159" y="0" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_customer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="1fa84218-b51f-4317-b43b-e8e82bdad137" x="159" y="54" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nama_customer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="f7b95f94-a34c-46bf-abdf-20029710d8c1" x="159" y="94" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{notelp_customer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="58aeda79-a10c-4dd5-a0d4-17083e240361" x="483" y="1" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tgl_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="11170f91-76d3-4881-9218-9807b98ccf57" x="159" y="176" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{id_buku}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="911a0800-607f-41d8-850a-732bf4a738f0" x="159" y="215" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{lama_pinjam}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="d1f672be-0481-46b7-aaa8-9f8226affbec" x="159" y="135" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{alamat_customer}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="899ddd73-0840-4c66-be21-5948ff940c90" x="483" y="275" width="152" height="20"/>
+				<textElement>
+					<font size="14"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{harga_pinjam}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="b1879528-79a0-47a9-85cf-1077120f9fb1" positionType="FixRelativeToBottom" x="-20" y="311" width="700" height="1"/>
+			</line>
+		</band>
+	</columnHeader>
+</jasperReport>
