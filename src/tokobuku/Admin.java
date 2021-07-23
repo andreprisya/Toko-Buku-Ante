@@ -913,7 +913,7 @@ public class Admin extends javax.swing.JFrame {
         });
 
         jLabel26.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
-        jLabel26.setText("Lama peminjaman :");
+        jLabel26.setText("Lama peminjaman (hari) :");
 
         jTextField20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
